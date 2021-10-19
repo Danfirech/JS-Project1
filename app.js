@@ -1,3 +1,2 @@
-document.write("hello World");
-alert("hell people");
-console.log("hello world");
+const name = "john";
+const lstName = "jordan";
