@@ -8,7 +8,7 @@ console.log(dimensions);
 
 function calculate(value) {
   console.log("the value in cm is: " + value * 2.54 + "cm");
-  return 45;
+  return;
 }
 
 calculate();
