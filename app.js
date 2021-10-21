@@ -1,16 +1,11 @@
-const person = {
-  name: "john",
-  lastName: "peters",
-  age: 40,
-  education: false,
-  married: true,
-  siblings: ["anna", "susan", "peter"],
-  greeting: function () {
-    console.log("Hello my name is John");
-  },
-};
+const num1 = 6;
+const num2 = 6;
+const result = num1 >= num2;
 
-console.log(person.siblings[2]);
-person.greeting();
-
-const age = person.age;
+if (num1 > num2) {
+  console.log("first number is bigger");
+} else if (result) {
+  console.log("you won");
+} else {
+  console.log("you lost");
+}
