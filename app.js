@@ -1,15 +1,16 @@
-function addValues(num1, num2) {
-  return num1 + num2;
-}
-
-const firstValue = addValues(3, 4);
-const secondValue = addValues(12, 34);
-
-const add = function (num1, num2) {
-  return num1 + num2;
+const person = {
+  name: "john",
+  lastName: "peters",
+  age: 40,
+  education: false,
+  married: true,
+  siblings: ["anna", "susan", "peter"],
+  greeting: function () {
+    console.log("Hello my name is John");
+  },
 };
 
-const thirdValue = add(5, 6);
+console.log(person.siblings[2]);
+person.greeting();
 
-const values = [firstValue, secondValue, thirdValue];
-console.log(values);
+const age = person.age;
