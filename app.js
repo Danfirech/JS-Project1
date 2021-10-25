@@ -1,11 +1,38 @@
-const num1 = 6;
-const num2 = 6;
-const result = num1 >= num2;
+const dice = 0;
 
-if (num1 > num2) {
-  console.log("first number is bigger");
-} else if (result) {
-  console.log("you won");
-} else {
-  console.log("you lost");
+
+switch(dice) {
+  case 1:
+    console.log('you got one')
+    break;
+  
+    case 2:
+    console.log('you got two')
+    break;
+    
+  case 3:
+    console.log('you got three')
+    break;
+
+  default:
+  console.log('you did not roll the dice')
+    
+
+}
+
+
+
+
+
+// esle if 
+if (dice === 1) {
+  console.log("you got one");
+}
+
+ else if (dice === 2) {
+  console.log("you got two");
+}
+
+else (dice < 1 || dice > 6) {
+  console.log("you did not roll the dice");
 }
