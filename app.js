@@ -1,7 +1,8 @@
-let amount = 10;
+let i;
+for (i = 0; i < 10; i++) {
+  console.log("and the number is : " + i);
+}
 
-while (amount > 0) {
-  console.log("i have " + amount + " dollars and im going to the mall");
-
-  amount--;
+for(let number = 11 ; number >= 0; number--) {
+  console.log('and the number is : ' = number)
 }
