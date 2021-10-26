@@ -1,8 +1,21 @@
-let i;
-for (i = 0; i < 10; i++) {
-  console.log("and the number is : " + i);
-}
+let names = ["john", "bobo", "barry", "olga", "ben"];
 
-for(let number = 11 ; number >= 0; number--) {
-  console.log('and the number is : ' = number)
-}
+//length
+
+console.log(names.length);
+
+console.log(names[names.length - 1]);
+
+// concat
+
+const lastNames = ["pepper", "onion", "banana"];
+
+const allNames = names.concat(lastNames);
+
+console.log(allNames);
+
+console.log(allNames.reverse());
+
+allNames.pop("susy");
+
+console.log(allNames);
