@@ -1,21 +1,24 @@
-let names = ["john", "bobo", "barry", "olga", "ben"];
+const gas = [20, 40, 100, 30];
 
-//length
+const food = [10, 40, 50];
 
-console.log(names.length);
+function calculateTotal(arr) {
+  let total = 0;
 
-console.log(names[names.length - 1]);
+  for (let i = 0; i < arr.length; i++) {
+    total += arr[i];
+  }
+  if (total > 100) {
+    console.log("over spending");
+  } else console.log("you are within your budget");
+}
 
-// concat
+const gasTotal = calculateTotal(food);
+const foodTotal = calculateTotal(gas);
+const randomTotal = calculateTotal();
 
-const lastNames = ["pepper", "onion", "banana"];
-
-const allNames = names.concat(lastNames);
-
-console.log(allNames);
-
-console.log(allNames.reverse());
-
-allNames.pop("susy");
-
-console.log(allNames);
+console.log({
+  gas: gasTotal,
+  food: foodTotal,
+  randomTotal: randomTotal,
+});
