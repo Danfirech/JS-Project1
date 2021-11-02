@@ -1,5 +1,15 @@
-const numbers = [0, 1, 2, 3, 4];
+const people = [
+  { name: "bob", age: 20, position: "developer" },
+  { name: "peter", age: 25, position: "designer" },
+  { name: "susy", age: 20, position: "the boss" },
+];
 
-for (let i = 0; i < numbers.length; i++) {
-  cosnoel.log(numbers[i]);
+function showPerson(person) {
+  console.log(person.position.toUpperCase());
 }
+
+// people.forEach(showPerson);
+
+people.forEach(function (item) {
+  console.log(item.position.toLocaleUpperCase());
+});
