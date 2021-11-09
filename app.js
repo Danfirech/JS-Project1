@@ -1,10 +1,11 @@
-const h1 = document.getElementById("title");
-h1.style.color = "red";
+const headings = document.getElementsByTagName("h2");
 
-const btn = document.getElementById("btn");
+headings[0].style.color = "red";
 
-btn.style.backgroundColor = "blue";
+const items = document.getElementsByTagName("li");
 
-document.getElementById("btn").style.backgroundColor = "blue";
+const betterItems = [...items];
 
-document.getElementById("btn").style.color = "white";
+betterItems.forEach(function (item) {
+  console.log(item);
+});
