@@ -1,11 +1,15 @@
-const headings = document.getElementsByTagName("h2");
+const result = document.querySelector("#result");
 
-headings[0].style.color = "red";
+result.style.backgroundColor = "blue";
 
-const items = document.getElementsByTagName("li");
+const item = document.querySelectorAll(".special");
 
-const betterItems = [...items];
+const lastItem = document.querySelector("li:last-child");
 
-betterItems.forEach(function (item) {
+const list = document.querySelectorAll(".special");
+console.log(list);
+
+list.forEach(function (item) {
   console.log(item);
+  item.style.color = "yellow";
 });
