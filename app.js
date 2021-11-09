@@ -1,41 +1,10 @@
-// Date
+const h1 = document.getElementById("title");
+h1.style.color = "red";
 
-const months = [
-  "January",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-];
+const btn = document.getElementById("btn");
 
-const days = [
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-  "Sunday",
-];
+btn.style.backgroundColor = "blue";
 
-const date = new Date();
-const month = date.getMonth();
-console.log(months[month]);
+document.getElementById("btn").style.backgroundColor = "blue";
 
-const day = date.getDay();
-console.log(days[day]);
-
-console.log(date.getDate());
-console.log(date.getFullYear());
-
-const sentance = `${days[day]}, ${date.getDate()} ${
-  months[month]
-} ${date.getFullYear()}`;
-
-console.log(sentance);
+document.getElementById("btn").style.color = "white";
