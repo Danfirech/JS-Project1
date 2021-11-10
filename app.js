@@ -1,4 +1,3 @@
-const result = document.querySelector("#result");
+const heading = document.querySelector("h2");
 
-console.log(result.firstChild);
-console.log(result.lastChild);
+const parent = heading.parentElement,
