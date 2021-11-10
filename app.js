@@ -1,3 +1,8 @@
-const heading = document.querySelector("h2");
+const first = document.querySelector(".first");
 
-const parent = heading.parentElement,
+const second = (first.nextSibling.nextSibling.style.color = "red");
+
+console.log(second);
+
+const last = document.querySelector("#last");
+const third = last.previousSibling.previousSibling;
