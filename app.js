@@ -1,8 +1,9 @@
-const first = document.querySelector(".first");
+const first = document.getElementById("first");
+const second = document.getElementById("second");
+const third = document.getElementById("third");
 
-const second = (first.nextSibling.nextSibling.style.color = "red");
+const classValue = first.className;
 
-console.log(second);
+second.className = "colors";
 
-const last = document.querySelector("#last");
-const third = last.previousSibling.previousSibling;
+third.classList.add("colors");
