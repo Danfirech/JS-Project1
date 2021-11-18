@@ -1,9 +1,10 @@
-const first = document.getElementById("first");
-const second = document.getElementById("second");
-const third = document.getElementById("third");
+// select element
+// addEventListener()
+// what event, what to do
 
-const classValue = first.className;
+const btn = document.querySelector(".btn");
+const heading = document.querySelector("h2");
 
-second.className = "colors";
-
-third.classList.add("colors");
+btn.addEventListener("click", function () {
+  heading.classList.add("red");
+});
