@@ -1,19 +1,10 @@
 const heading = document.querySelector("h1");
+const btn = document.querySelector("btn");
 
-const btn = document.querySelector(".btn");
-
-btn.addEventListener("click", function () {
-  console.log("you clicked me");
+heading.addEventListener("click", function (event) {
+  console.log(event.currentTarget);
 });
 
-btn.addEventListener("mousedown", function () {
-  console.log("down");
-});
-
-btn.addEventListener("mouseup", function () {
-  console.log("up");
-});
-
-heading.addEventListener("mouseenter", function () {
-  heading.classList.add("blue");
+btn.addEventListener("click", function (event) {
+  console.log(event.currentTarget);
 });
