@@ -1,10 +1,22 @@
-const heading = document.querySelector("h1");
-const btn = document.querySelector("btn");
+const container = document.querySelector(".container");
+const btn = document.querySelector(".btn");
+const heading = document.querySelector(".heading");
 
-heading.addEventListener("click", function (event) {
-  console.log(event.currentTarget);
+function sayHello() {
+  console.log("hello there");
+}
+
+btn.addEventListener("click", function () {
+  const element = document.createElement("h1");
+  element.classList.add("Heading");
+  element.textContent = `im inside the container`;
+  container.appendChild(element);
 });
 
-btn.addEventListener("click", function (event) {
-  console.log(event.currentTarget);
+container.addEventListener("click", function (e) {
+  if (event.target.classList.contains("heading")) {
+    console.log("hello there");
+  }
 });
+
+heading.addEventListener("click", sayHello);
