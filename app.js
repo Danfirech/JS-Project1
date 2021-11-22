@@ -1,22 +1,10 @@
-const container = document.querySelector(".container");
-const btn = document.querySelector(".btn");
-const heading = document.querySelector(".heading");
+const form = document.getElementById("form");
+const email = document.getElementById("email");
+const password = document.getElementById("password");
 
-function sayHello() {
-  console.log("hello there");
-}
-
-btn.addEventListener("click", function () {
-  const element = document.createElement("h1");
-  element.classList.add("Heading");
-  element.textContent = `im inside the container`;
-  container.appendChild(element);
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+  console.log("form Submitted");
+  console.log(email.value);
+  console.log(password.value);
 });
-
-container.addEventListener("click", function (e) {
-  if (event.target.classList.contains("heading")) {
-    console.log("hello there");
-  }
-});
-
-heading.addEventListener("click", sayHello);
