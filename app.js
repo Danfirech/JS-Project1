@@ -1,10 +1,12 @@
-const form = document.getElementById("form");
-const email = document.getElementById("email");
-const password = document.getElementById("password");
+// localStorage.setItem("name", "john");
+// sessionStorage.setItem("name", "john");
 
-form.addEventListener("submit", function (e) {
-  e.preventDefault();
-  console.log("form Submitted");
-  console.log(email.value);
-  console.log(password.value);
-});
+localStorage.setItem("name", "john");
+localStorage.setItem("friend", "peter");
+localStorage.setItem("address", "street 123");
+
+const name = localStorage.getItem("name");
+
+console.log(name);
+
+localStorage.removeItem("name");
